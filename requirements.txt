@@ -3,3 +3,7 @@ uvicorn[standard]==0.24.0
 supabase==2.3.4
 python-dotenv==1.0.0
 pydantic==1.10.13
+
+# NOTE:
+# Python must be <3.13 because fastapi+pydantic v1 currently raise ForwardRef _evaluate errors on 3.13.
+# A runtime.txt is added to pin Python 3.11.x on Render.
