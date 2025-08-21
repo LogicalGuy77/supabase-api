@@ -6,9 +6,9 @@ Production-ready FastAPI service exposing LunarCrush data stored in Supabase wit
 
 1. Uses Python 3.13 (FastAPI 0.112.x + Pydantic v2 stack).
 
-2. Install dependencies:
+2. Install dependencies (optionally with constraints):
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -c constraints.txt
 ```
 
 3. Run the server:
