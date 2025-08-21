@@ -1,9 +1,8 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
+fastapi==0.112.0
+uvicorn[standard]==0.30.1
 supabase==2.3.4
 python-dotenv==1.0.0
-pydantic==1.10.13
+pydantic==2.9.0
 
-# NOTE:
-# Python must be <3.13 because fastapi+pydantic v1 currently raise ForwardRef _evaluate errors on 3.13.
-# A runtime.txt is added to pin Python 3.11.x on Render.
+# Pydantic v2 + FastAPI 0.112.x selected for Python 3.13 compatibility.
+# If Render still tries to build a pydantic-core wheel from source, bump pydantic to the latest patch.

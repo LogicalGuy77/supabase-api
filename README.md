@@ -4,7 +4,7 @@ Production-ready FastAPI service exposing LunarCrush data stored in Supabase wit
 
 ## Setup
 
-1. (Render) Ensure Python 3.11 is used. A `runtime.txt` is included (python-3.11.9). Python 3.13 currently triggers a pydantic ForwardRef error with FastAPI+pydantic v1.
+1. Uses Python 3.13 (FastAPI 0.112.x + Pydantic v2 stack).
 
 2. Install dependencies:
 ```bash
